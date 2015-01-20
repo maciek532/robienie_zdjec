@@ -3,5 +3,8 @@
 
     <string name="app_name">robienie_zdjec</string>
     <string name="hello_world">Hello world!</string>
+    <string name="zrob_zdjecie">zrób zdjęcie</string>
+    <string name="edytuj_zdjecie">edytuj zdjęcie</string>
+    <string name="zapisz_zdjecie">zapisz zdjęcie</string>
 
 </resources>
