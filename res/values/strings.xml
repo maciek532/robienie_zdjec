@@ -6,5 +6,6 @@
     <string name="zrob_zdjecie">zrób zdjęcie</string>
     <string name="edytuj_zdjecie">edytuj zdjęcie</string>
     <string name="zapisz_zdjecie">zapisz zdjęcie</string>
+    <string name="title_activity_drawingactivity">Drawingactivity</string>
 
 </resources>

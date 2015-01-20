@@ -10,13 +10,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:onClick="camera"
         android:text="@string/zrob_zdjecie" />
+
+    <com.example.robienie_zdjec.DrawingView
+        android:id="@+id/drawingView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:onClick="editpicture"
         android:text="@string/edytuj_zdjecie" />
 
     <Button
@@ -24,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:onClick="savepicture"
         android:text="@string/zapisz_zdjecie" />
 
 </LinearLayout>

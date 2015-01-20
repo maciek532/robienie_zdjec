@@ -1,6 +1,7 @@
 package com.example.robienie_zdjec;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -8,8 +9,9 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
 
-public class DrawingView extends View {
+public class DrawingView extends ImageView {
 
 	private Paint paint=new Paint();
 	private Path path=new Path();
@@ -47,4 +49,8 @@ public class DrawingView extends View {
 		return super.onTouchEvent(event);
 	}
 	
+	@Override
+	public void setImageBitmap(Bitmap bm) {
+		super.setImageBitmap(bm);
+	}
 }
