@@ -49,8 +49,7 @@ public class DrawingView extends ImageView {
 		return super.onTouchEvent(event);
 	}
 	
-	@Override
-	public void setImageBitmap(Bitmap bm) {
-		super.setImageBitmap(bm);
+	public void SetStrokeWidth(float width){
+		paint.setStrokeWidth(width);
 	}
 }

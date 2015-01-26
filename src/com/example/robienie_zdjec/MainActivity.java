@@ -1,14 +1,21 @@
 package com.example.robienie_zdjec;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
 import android.app.Activity;
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
@@ -43,6 +50,18 @@ public class MainActivity extends Activity {
 	}
 	
 	public void savepicture(View v){
-
+		ContextWrapper wrapper=new ContextWrapper(this);
+		File root = Environment.getExternalStorageDirectory();
+        File file = new File(root.getAbsolutePath()+"/DCIM/Camera/img.jpg");
+		
+		FileOutputStream fos=null;
+		
+		try{
+		fos=new FileOutputStream(file);
+		
+		imageBitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+		fos.close();
+		}catch(Exception e){e.printStackTrace();}
+		//Toast.makeText(this, directory.getAbsolutePath(), Toast.LENGTH_SHORT).show();
 	}
 }
