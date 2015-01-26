@@ -52,4 +52,8 @@ public class DrawingView extends ImageView {
 	public void SetStrokeWidth(float width){
 		paint.setStrokeWidth(width);
 	}
+
+	public void ChangeColor(int color) {
+		paint.setColor(color);
+	}
 }
